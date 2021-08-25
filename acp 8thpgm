@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+const int x=32;
+char *tolowercase(char *a)
+{
+for(int i=0;a[i]!='\0';i++)
+a[i]=a[i]|x;
+return a;
+}
+int main()
+{
+char str[100];
+gets(str);
+printf("%s",tolowercase(str));
+return(0);
+}
